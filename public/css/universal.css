@@ -1,0 +1,129 @@
+:root{
+    --color--principal: #fff1d7;
+    --color--header--footer: #301500;
+    --color--margen: #2a2c2c;
+
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: var(--color--principal);
+    margin: 0;
+    padding: 0;
+}
+
+/* inicio css header */
+
+header{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-height: 300px;
+}
+nav{
+    position: relative;
+    background-color:  var(--color--header--footer);
+    border-bottom: var(--color--margen) solid 2px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+.btn{
+    display: flex;
+    background: var(--color--header--footer);
+    color: var(--color--principal);
+    border: 1px solid transparent;
+    transition: var(--transition);
+    height: 50px;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#login{
+    text-decoration: none;
+}
+#txt-titulo{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    color: var(--color--principal);
+    margin: -25px 0 0 -25px;
+    left: 25%;
+    font-size: 80px;
+}
+.btn:hover{
+    background: transparent;
+    border-color: var(--color--principal);
+}
+#btn-carro{
+    padding: 0px;
+    height: 50px;
+    width: 50px;
+}
+#carro{
+    position: relative;
+    height: 85%;
+    margin: 0px;
+    padding: 15%;
+}
+#fondo{
+    position: static;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    max-height: 300px;
+    z-index: 2;
+}
+
+/* fin css header*/
+
+/*inicio css footer*/
+
+footer{
+    position: relative;
+    top: 0px;
+    background-color: var(--color--header--footer);
+    margin-bottom: var(--color--margen) 2px solid;
+    width: 100%;
+    height: 200px;
+    color: var(--color--principal);
+    display: flex;
+    flex-direction: column;
+}
+#redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#redes img{
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+}
+#txt-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: var(--color--margen) 2px dotted;
+    color: var(--color--principal);
+}
+/*fin css footer*/
+
+@media(max-width: 1016px){
+    main{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #txt-titulo{
+        font-size: 60px;
+    }
+  }

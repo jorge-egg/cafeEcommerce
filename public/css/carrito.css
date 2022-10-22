@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color--principal: #fff1d7;
+    --color--margen: #2a2c2c;
+    --color--secundario:#a68069;
+}
+h4{
+    color: var(--color--margen);
+}
+p{
+    color: var(--color--margen);
+}
+.content-product{
+    background-color: #ffffff;
+    position: relative;
+    width: 80%;
+    height: 170px;
+    margin: 1%;
+    padding-top: 0px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+img{
+    width: auto;
+    max-width: 90%;
+    height: 50%;
+    max-height: 100px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    min-height: 450px;
+}
+.product_cart{
+    display: flex;
+    flex-direction: column;
+}
+.total_cart{
+    background-color: #ffffff;
+    position: relative;
+    width: 60%;
+    height: 250px;
+    margin: 1%;
+    padding-top: 0px;
+    border-radius: 5px;
+    border: #2a2c2c 3px solid;
+    
+}
+.content-product-txt{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+}
+.changeCant{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.btn-agregar{
+    width: 80px;
+    height: 40px;
+    background-color: #ffffff;
+    border: #D4D2C7 1px solid;
+}
+.btn-agregar:hover{
+    background-color: #D4D2C7;
+}
+.cant{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: #D4D2C7 1px solid;
+}
+label{
+ display: none;
+}
+.info{
+    flex-direction: column;
+}
